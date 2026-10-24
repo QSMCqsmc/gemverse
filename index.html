@@ -10,6 +10,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://is1-ssl.mzstatic.com">
 <link rel="preconnect" href="https://embed.music.apple.com">
+<link rel="preconnect" href="https://music.apple.com" crossorigin>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f2f2f7'/%3E%3Ctext x='17' y='47' font-size='44' fill='%231d1d1f'%3E♫%3C/text%3E%3C/svg%3E">
 <style>
 :root{color-scheme:light;--bg:#fff;--ink:#1d1d1f;--muted:#737378;--line:#e9e9ed;--soft:#f5f5f7;--blue:#0066cc;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;font-synthesis:none;-webkit-text-size-adjust:100%}
@@ -58,7 +59,7 @@ main{padding-top:26px;padding-bottom:calc(30px + env(safe-area-inset-bottom))}.p
 <ul class="list" id="list" aria-label="邓紫棋歌曲列表"></ul>
 <div id="no-results" class="empty-results" hidden><strong>没有找到这首歌</strong><span>试试其他关键词，或切换音乐平台。</span><br><button class="small-btn" id="reset" type="button">清除搜索与筛选</button></div>
 </section>
-<div class="catalog-note"><p id="catalog-summary"></p><details><summary>使用与排序说明</summary><p>本站名称：棋音。所选歌曲跨平台关联，取消选择会同时清除两个平台的选择。平台、搜索、排序、专辑筛选、所选歌曲和播放地区会保存在当前浏览器，下次打开自动恢复，不会自动开始播放。不记录播放进度。浏览器清除网站数据或使用无痕模式时，记忆可能丢失。</p><p>iPhone：Safari 分享 → 添加到主屏幕 → 名称填写「棋音」。以后点主屏幕图标打开。Safari 左上角的「1」是浏览器标签页组名称，需轻点 Safari「标签页」按钮 →「更多」→「给标签页组重新命名」，网页不能修改。</p><p>「最多播放」采用 Kworb 统计的 Spotify 累计播放量快照，非 Apple Music / 网易云实际播放量，也不代表全网总播放量。按曲名及版本名称严格匹配；同一首歌只展示一个代表版本，优先原版录音室版本；若只有现场等版本，则保留其中一个。多曲联唱不列入单曲列表。未匹配到的曲目排在末尾，不补造数据。不同版本、语言和混音不合并。</p><p><button class="small-btn" id="forget" type="button">清除本站记忆</button><span id="storage-status" role="status"></span></p><p>以平台官方歌手 ID 核对曲目，同曲不同发行、现场、混音与重录版本合并为一首，优先原版录音室版本；未将翻唱邓紫棋的其他歌手收录为本人作品。</p><p>这是可获取目录的快照，各地区版权、上下架状态及平台收录范围可能不同，不代表全部已发行作品。Apple Music 曲目来自香港与台湾商店，播放器默认使用该曲目的可获取地区；此次中国大陆目录接口没有返回单曲。</p><p>选歌只会在本页载入官方播放器。在 iPhone 上，请再次点击官方播放器内的播放键。完整播放需要平台授权，无法保证每一首都能完整播放；本站不提供绕过版权限制的音频。</p><p>封面与播放器需要联网。选择歌曲后会连接对应音乐平台，适用该平台的隐私政策。</p></details></div>
+<div class="catalog-note"><p id="catalog-summary"></p><details><summary>使用与排序说明</summary><p>本站名称：棋音。所选歌曲跨平台关联，取消选择会同时清除两个平台的选择。平台、搜索、排序、专辑筛选、所选歌曲会保存在当前浏览器，下次打开自动恢复，不会自动开始播放。不记录播放进度。浏览器清除网站数据或使用无痕模式时，记忆可能丢失。</p><p>iPhone：Safari 分享 → 添加到主屏幕 → 名称填写「棋音」。以后点主屏幕图标打开。Safari 左上角的「1」是浏览器标签页组名称，需轻点 Safari「标签页」按钮 →「更多」→「给标签页组重新命名」，网页不能修改。</p><p>「最多播放」采用 Kworb 统计的 Spotify 累计播放量快照，非 Apple Music / 网易云实际播放量，也不代表全网总播放量。按曲名及版本名称严格匹配；同一首歌只展示一个代表版本，优先原版录音室版本；若只有现场等版本，则保留其中一个。多曲联唱不列入单曲列表。未匹配到的曲目排在末尾，不补造数据。不同版本、语言和混音不合并。</p><p><button class="small-btn" id="forget" type="button">清除本站记忆</button><span id="storage-status" role="status"></span></p><p>以平台官方歌手 ID 核对曲目，同曲不同发行、现场、混音与重录版本合并为一首，优先原版录音室版本；未将翻唱邓紫棋的其他歌手收录为本人作品。</p><p>这是可获取目录的快照，各地区版权、上下架状态及平台收录范围可能不同，不代表全部已发行作品。Apple Music 曲目来自香港与台湾商店，播放器固定使用中国大陆；此次中国大陆目录接口没有返回单曲。</p><p>选歌只会在本页载入官方播放器。在 iPhone 上，请再次点击官方播放器内的播放键。完整播放需要平台授权，无法保证每一首都能完整播放；本站不提供绕过版权限制的音频。</p><p>封面与播放器需要联网。选择歌曲后会连接对应音乐平台，适用该平台的隐私政策。</p></details></div>
 <footer class="footer"><span>G.E.M. · 音乐资料库</span><span>非官方歌迷网站 · 音乐版权归权利人所有</span></footer>
 <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
 <noscript>请启用 JavaScript 以浏览歌曲目录和载入官方播放器。</noscript>
@@ -89,8 +90,7 @@ const views=saved.views&&typeof saved.views==='object'?saved.views:{};
 function syncSelection(){for(const key of ['apple','netease'])selected[key]=CATALOG[key].find(s=>s.workKey===activeWork)?.id||null}
 function clearSelection(){activeWork='';selected.apple=null;selected.netease=null;player();render()}
 syncSelection();
-const savedRegions=saved.regions&&typeof saved.regions==='object'?saved.regions:{};
-function saveState(){views[platform]={search:$('search').value,album:$('album').value,sort:$('sort').value};try{localStorage.setItem(preferenceKey,JSON.stringify({platform,sort:$('sort').value,album:$('album').value,search:$('search').value,selected,activeWork,views,storefront:saved.storefront,regions:savedRegions}))}catch{if($('storage-status'))$('storage-status').textContent='浏览器未允许保存设置，本次关闭后无法记忆。'}}
+function saveState(){views[platform]={search:$('search').value,album:$('album').value,sort:$('sort').value};try{localStorage.setItem(preferenceKey,JSON.stringify({platform,sort:$('sort').value,album:$('album').value,search:$('search').value,selected,activeWork,views}))}catch{if($('storage-status'))$('storage-status').textContent='浏览器未允许保存设置，本次关闭后无法记忆。'}}
 const rankKey=name=>normalize(name).replace(/[\s()（）《》「」,:：，]/g,'');
 const popularityIndex=new Map();
 for(const t of POPULARITY.tracks){const key=rankKey(t.name);const old=popularityIndex.get(key);popularityIndex.set(key,old===undefined?t:null)}
@@ -125,37 +125,49 @@ function albums(){
  $('album').innerHTML='<option value="">全部专辑</option>'+[...map].sort((a,b)=>b[1].date.localeCompare(a[1].date)||a[1].name.localeCompare(b[1].name,'zh')).map(([id,a])=>`<option value="${esc(id)}">${esc(a.name)} · ${a.count} 首</option>`).join('');
 }
 function embedURL(s,region){
- const u=new URL(s.url);u.hostname='embed.music.apple.com';u.pathname=u.pathname.replace(/^\/[a-z]{2}\//,`/${region||s.country}/`);u.searchParams.delete('uo');u.searchParams.set('theme','light');return u.href;
+ const u=new URL(s.url);u.hostname='embed.music.apple.com';u.pathname=u.pathname.replace(/^\/[a-z]{2}\//,`/cn/`);u.searchParams.delete('uo');u.searchParams.set('theme','light');return u.href;
 }
+let embedMounts=0;
 function mountEmbed(s,region){
  const slot=$('embed-slot');slot.replaceChildren();
- const frame=document.createElement('iframe');frame.id='official-player';frame.title=`${platform==='apple'?'Apple Music':'网易云音乐'} 官方播放器 · ${s.name}`;frame.allow='autoplay *; encrypted-media *; fullscreen *; clipboard-write';frame.referrerPolicy='strict-origin-when-cross-origin';
+ const frame=document.createElement('iframe');frame.loading='eager';frame.dataset.instance=String(++embedMounts);frame.id='official-player';frame.title=`${platform==='apple'?'Apple Music':'网易云音乐'} 官方播放器 · ${s.name}`;frame.allow='autoplay *; encrypted-media *; fullscreen *; clipboard-write';frame.referrerPolicy='strict-origin-when-cross-origin';
  frame.src=embedURL(s,region);slot.appendChild(frame);
  $('embed-status').textContent='请在官方播放器内点击播放。';
  // iframe 的 load 事件无法证明跨域内容成功播放，因此不伪造播放状态。
 }
-function officialURL(s,region){const u=new URL(s.url);if(region)u.pathname=u.pathname.replace(/^\/[a-z]{2}\//,`/${region}/`);return u.href}
+function officialURL(s){const u=new URL(s.url);u.pathname=u.pathname.replace(/^\/[a-z]{2}\//,'/cn/');return u.href}
+const playerPanes={apple:document.createElement('div'),netease:document.createElement('div')};
+const paneWork={apple:'',netease:''};
+for(const key of ['apple','netease']){playerPanes[key].dataset.playerPlatform=key;$('player').appendChild(playerPanes[key])}
 function player(){
+ $('player').hidden=!activeWork;
+ for(const key of ['apple','netease']){
+  if(!activeWork||paneWork[key]!==activeWork){playerPanes[key].replaceChildren();paneWork[key]=''}
+  playerPanes[key].hidden=key!==platform;
+ }
+ if(!activeWork)return;
+ if(paneWork[platform]!==activeWork){renderPlayer(playerPanes[platform]);paneWork[platform]=activeWork}
+}
+function renderPlayer(panel){
+ const $=id=>panel.querySelector('[data-control="'+id+'"]')||panel.querySelector('#'+id);
  const s=all().find(s=>s.workKey===activeWork);
  const reference=s||CATALOG.apple.concat(CATALOG.netease).find(s=>s.workKey===activeWork);
- $('player').hidden=!reference;
- if(!reference){$('player').replaceChildren();return}
- const head=`<div class="player-head"><div><div class="eyebrow">已选择 · ${platform==='apple'?'APPLE MUSIC':'网易云音乐'}</div><h2 class="player-name">${esc(reference.name)}</h2><p class="subtle">${esc(reference.album)}</p></div><button class="icon-btn" id="close-player" type="button" aria-label="取消选择">${icon('close')}</button></div>`;
+ panel.hidden=!reference;
+ if(!reference){panel.replaceChildren();return}
+ const head=`<div class="player-head"><div><div class="eyebrow">已选择 · ${platform==='apple'?'APPLE MUSIC':'网易云音乐'}</div><h2 class="player-name">${esc(reference.name)}</h2><p class="subtle">${esc(reference.album)}</p></div><button class="icon-btn" data-control="close-player" type="button" aria-label="取消选择">${icon('close')}</button></div>`;
  if(!s){
-  $('player').innerHTML=head+`<div class="restriction"><strong>本平台目录暂未收录对应歌曲</strong><p>已保留你的选择，可以切回另一平台继续查看。</p><button id="switch-other" class="small-btn" type="button">切回${platform==='apple'?'网易云音乐':'Apple Music'}</button></div>`;
+  panel.innerHTML=head+`<div class="restriction"><strong>本平台目录暂未收录对应歌曲</strong><p>已保留你的选择，可以切回另一平台继续查看。</p><button id="switch-other" class="small-btn" type="button">切回${platform==='apple'?'网易云音乐':'Apple Music'}</button></div>`;
   $('close-player').addEventListener('click',clearSelection);$('switch-other').addEventListener('click',()=>switchPlatform(platform==='apple'?'netease':'apple'));return;
  }
  if(platform==='netease'){
-  $('player').innerHTML=head+`<div class="restriction"><p>网易云官方外链暂无法站内播放，可打开这首歌的官方页面。返回本站后仍保留当前选择。</p><a class="primary-link" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">在网易云音乐打开《${esc(s.name)}》 ↗</a><button type="button" id="switch-apple" class="small-btn">在本站切换 Apple Music</button></div>`;
+  panel.innerHTML=head+`<div class="restriction"><p>网易云官方外链暂无法站内播放，可打开这首歌的官方页面。返回本站后仍保留当前选择。</p><a class="primary-link" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">在网易云音乐打开《${esc(s.name)}》 ↗</a><button type="button" id="switch-apple" class="small-btn">在本站切换 Apple Music</button></div>`;
   $('close-player').addEventListener('click',clearSelection);$('switch-apple').addEventListener('click',()=>switchPlatform('apple'));return;
  }
- const regions=[...new Set([...s.regions,'cn'])];
- const region=regions.includes(saved.storefront)?saved.storefront:(regions.includes(savedRegions[s.id])?savedRegions[s.id]:s.country);
- $('player').innerHTML=head+`<div id="embed-slot" class="embed-slot"></div><div class="player-note"><p>若仍显示 1:30，官方播放器当前提供的是试听。完整播放需要有效的 Apple Music 订阅、账号地区匹配及播放器成功取得授权，单独登录账号不一定足够。本站无法读取你的订阅或嵌入播放器的授权状态。</p><p id="embed-status" role="status"></p><label class="store">播放地区 <select id="region" aria-label="Apple Music 播放地区">${regions.map(c=>`<option value="${c}" ${c===region?'selected':''}>${{cn:'中国大陆',hk:'香港',tw:'台湾'}[c]||c}${!s.regions.includes(c)?'（尝试）':''}</option>`).join('')}</select></label><p class="subtle">请与 Apple Music 账号地区一致；标有「尝试」的地区尚未核验此曲版权。</p><a class="primary-link" id="open-apple" href="${esc(officialURL(s,region))}" target="_blank" rel="noopener noreferrer">在 Apple Music 打开这首歌 ↗</a><details id="playback-help"><summary>已登录，为什么仍是试听？</summary><div class="help-content">先在 Apple Music 官方页面或音乐 App 中确认同一账号能完整播放本曲；再检查账号地区与上方选择是否一致。若官方可播完整、本站仍只有试听，说明当前嵌入环境未取得完整播放权限，可在官方页面继续收听，本站不伪造完整版。<br><button type="button" class="small-btn" id="retry-player">重新载入播放器</button>${s.preview?'<button type="button" class="small-btn" id="preview">使用 Apple 官方试听片段</button>':''}</div></details></div>`;
+ const region='cn';
+ panel.innerHTML=head+`<div id="embed-slot" class="embed-slot"></div><div class="player-note"><p id="embed-status" role="status"></p><span class="store">中国大陆 · Apple Music</span><a class="primary-link" id="open-apple" href="${esc(officialURL(s,region))}" target="_blank" rel="noopener noreferrer">在 Apple Music 打开这首歌 ↗</a><details id="playback-help"><summary>播放帮助</summary><div class="help-content">已固定中国大陆。完整播放由 Apple Music 的订阅、歌曲版权和授权决定。若仍只有试听，请在官方歌曲页或音乐 App 中确认同一账号能否完整播放。若官方可播完整、本站仍只有试听，说明当前嵌入环境未取得完整播放权限，可在官方页面继续收听，本站不伪造完整版。<br><button type="button" class="small-btn" id="retry-player">重新载入播放器</button>${s.preview?'<button type="button" class="small-btn" id="preview">使用 Apple 官方试听片段</button>':''}</div></details></div>`;
  mountEmbed(s,region);
  $('close-player').addEventListener('click',clearSelection);
- $('retry-player').addEventListener('click',()=>mountEmbed(s,$('region').value));
- $('region').addEventListener('change',e=>{saved.storefront=e.target.value;savedRegions[s.id]=e.target.value;saveState();$('open-apple').href=officialURL(s,e.target.value);mountEmbed(s,e.target.value)});
+ $('retry-player').addEventListener('click',()=>mountEmbed(s,'cn'));
  if($('preview'))$('preview').addEventListener('click',()=>{
   $('embed-slot').innerHTML=`<div class="audio-fallback"><p class="subtle">Apple 官方试听片段（不是完整版）</p><audio controls preload="none" aria-label="${esc(s.name)} 官方试听"></audio></div>`;
   const audio=$('embed-slot').querySelector('audio');audio.src=s.preview;
